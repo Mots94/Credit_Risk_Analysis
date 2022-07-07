@@ -10,3 +10,7 @@ Determining the risk of granting a loan can be a challenging task for many reaso
 
 ---
 * A second model used the SMOTE approach, which synthesizes new data from existing data.  These data points are sampled based on their proximity to existing data points, rather than being randomly chosen.  Though this is the case, the predicitve capability for this model was similar to the previous model.  The balanced accuracy score was again 66%, meaning that 66% of all predictions were predicted accuractly.  The precision of high risk loan predictions is again low at 1%.
+
+![SMOTE](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/SMOTE_oversample.png)
+
+---
