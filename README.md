@@ -7,3 +7,6 @@ Determining the risk of granting a loan can be a challenging task for many reaso
 * The first model utilized a simple naive random oversampling approach. This model had a balanced accuracy score of 66%.  Of all the high risk loans in the resampled dataset, 71% were actually predicted to be high risk.  This seems pretty impressive, considering a model is needed to identify high risk loans so that loans are not given out in those situations.  However, the precision of predicting high risk loans is quite low at 1%.  Though the recall of this model is high, loans are likely to be predicted as high risk when in actuality they are not.  This could lead to denying more loans than is necessary and losing out on business.
 
 ![n_oversample](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/naive_resample.png)
+
+---
+* A second model used the SMOTE approach, which synthesizes new data from existing data.  These data points are sampled based on their proximity to existing data points, rather than being randomly chosen.  Though this is the case, the predicitve capability for this model was similar to the previous model.  The balanced accuracy score was again 66%, meaning that 66% of all predictions were predicted accuractly.  The precision of high risk loan predictions is again low at 1%.
