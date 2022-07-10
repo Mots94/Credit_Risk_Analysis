@@ -16,9 +16,16 @@ Determining the risk of granting a loan can be a challenging task for many reaso
 ---
 * The third model used in this analysis was an undersampling model.  In this case, the balanced accuracy score decreased to 52%.  The precision scores for high and low risk predictions did not change compared to previous models.  
 
-![under}(https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/undersample.png)
+![under](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/undersample.png)
 
 ---
 * A combination of under and oversampling was completed using the SMOTEENN resampling method.  In this case, the recall of the model was quite high at 72%, and the balanced accuracy score was 64%.  Though there have been higher recall scores for high risk loans, precision for high risk loan predictions has stayed low across all of these models at 1%.  It may be better to have a balance of precision and accuracy to determine credit risk determination.  Two more alogrithms were used to in this case to see if that is possible.
 
 ![SMOTEENN](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/SMOTEENN.png)
+
+---
+* In the final two sampling algorithms, some greater consideration was given to the large imbalance seen in this dataset related to the target variable.  Rather than simple under or oversampling the target variable groups.  The first model, Random Forest for Imbalanced Classification, used bootstrap sampling of features at random, and within these samples not all features are sampled.  These samples are what is used to fit a decision tree that ultimately yields the predictive values.  In the this first model, precision for high risk loan predictions increased to 23%.  However, there was a balanced accuracy score of 1.00.  The second model used, Easy Ensemble for Imbalanced Classification, also utilizes bootstrap samples.  However, this model randomly undersamples data rather than oversampling.  The results of this algorithm were simlar to the previous.  Precision for high risk loans was 0.11 and the balanced accuracy score was 0.99.  
+
+![](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/balanced_rf.png)
+
+![](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/easy_ensemble.png)
