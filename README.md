@@ -14,3 +14,11 @@ Determining the risk of granting a loan can be a challenging task for many reaso
 ![SMOTE](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/SMOTE_oversample.png)
 
 ---
+* The third model used in this analysis was an undersampling model.  In this case, the balanced accuracy score decreased to 52%.  The precision scores for high and low risk predictions did not change compared to previous models.  
+
+![under}(https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/undersample.png)
+
+---
+* A combination of under and oversampling was completed using the SMOTEENN resampling method.  In this case, the recall of the model was quite high at 72%, and the balanced accuracy score was 64%.  Though there have been higher recall scores for high risk loans, precision for high risk loan predictions has stayed low across all of these models at 1%.  It may be better to have a balance of precision and accuracy to determine credit risk determination.  Two more alogrithms were used to in this case to see if that is possible.
+
+![SMOTEENN](https://github.com/Mots94/Credit_Risk_Analysis/blob/main/Images/SMOTEENN.png)
